@@ -6,4 +6,16 @@ public record Sub(
         double Width,
         double cruiseSpeed,
         double MaxSpeed
-) { }
+
+
+) {
+    @Override
+    public String toString() {
+        return String.format("%s — %.1fm x %.1fm, cruise %.1f kn, max %.1f kn",
+                Id, length, Width, cruiseSpeed, MaxSpeed);
+    }
+}
+
+
+
+
