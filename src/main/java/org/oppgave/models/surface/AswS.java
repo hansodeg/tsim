@@ -1,5 +1,7 @@
 package org.oppgave.models.surface;
 
+// Overflate fartøy med ASW kapasitet
+
 public class AswS {
     protected int course;
     protected double speed;

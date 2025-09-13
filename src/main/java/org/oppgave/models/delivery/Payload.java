@@ -1,5 +1,6 @@
 package org.oppgave.models.delivery;
 
+//
 public class Payload {
     private static final int MAX_RANGE = 11000;
     private double maxSpeed = 50;
@@ -45,13 +46,12 @@ public class Payload {
         return String.format("%02d:%02d", mm, ss);
     }
 
-    // Result DTO
     public static final class Result {
         public final boolean hit;
         public final String reason;         // i tilfelle ikke treff
         public final double timeSec;        // tidspunkt til treff eller max rekkevidde
-        public final double torpedoDist;    // torpedodistande ved tregg
-        public final double initialSep;     // offset til torp er på max fart, for context
+        public final double torpedoDist;    // torpedodistanse ved treff
+        public final double initialSep;     // offset til torp er på max fart
 
         private Result(boolean hit, String reason, double timeSec, double torpedoDist, double initialSep) {
             this.hit = hit;

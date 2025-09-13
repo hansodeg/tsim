@@ -1,5 +1,7 @@
 package org.oppgave.models.sub;
 
+// subsett av Sub for random generering av sub til hver "runde"
+
 public enum SubClass {
     LA("LA", 110, 10, 20, 33),
     OH("OH", 170, 13, 20, 25),
