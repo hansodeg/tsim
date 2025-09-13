@@ -3,3 +3,5 @@
 ## spesifikasjoner 
 henta ut sub-spesifikasjoner og payload-spesifikasjoner fra åpne kilder på nett 
 
+kjører java21
+
